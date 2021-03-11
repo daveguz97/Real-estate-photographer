@@ -1,0 +1,19 @@
+{
+  "name": "real-estate-photography",
+  "version": "1.0.0",
+  "description": "A real estate photography website",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css"
+  },
+  "keywords": [
+    "real-estate",
+    "photography",
+    "houses"
+  ],
+  "author": "David Guzman",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
