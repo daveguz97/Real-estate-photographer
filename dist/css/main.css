@@ -1,7 +1,54 @@
+@media (max-width: 768px) {
+  #video-background {
+    display: none; }
+  .main-header {
+    background-image: url("https://images.pexels.com/photos/3214064/pexels-photo-3214064.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; } }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box; }
 
-nav .navbar-brand {
-  font-family: 'Crimson Text', serif; }
+body {
+  font-family: 'Lato', sans-serif; }
+
+:is(h1, h2, h3, h4, h5, h6) {
+  font-family: 'Merriweather', serif; }
+
+.main-header {
+  height: 100vh;
+  position: relative; }
+  .main-header .overlay {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    object-fit: cover;
+    position: relative;
+    background: rgba(0, 0, 0, 0.5); }
+  .main-header #video-background {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover; }
+  .main-header nav {
+    position: relative; }
+    .main-header nav .navbar-brand {
+      font-family: 'Crimson Text', serif;
+      font-size: 2rem; }
+    .main-header nav #shopping-cart {
+      position: absolute;
+      right: 1.5rem;
+      cursor: pointer; }
+  .main-header .showcase .container {
+    height: 80vh; }

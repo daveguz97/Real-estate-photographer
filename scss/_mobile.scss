@@ -1,0 +1,26 @@
+// @media (min-aspect-ratio: 16/9) {
+//     #video-background {
+//         width: 100%;
+//         height: auto;
+//     }
+// }
+
+// @media (max-aspect-ratio: 16/9) {
+    
+//     #video-background {
+//         width: auto;
+//         height: 100%;
+//     }
+// }
+
+@media (max-width: 768px) {
+    #video-background {
+        display: none;
+    }
+    .main-header {
+        background-image: url('https://images.pexels.com/photos/3214064/pexels-photo-3214064.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}

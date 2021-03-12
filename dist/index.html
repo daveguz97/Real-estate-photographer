@@ -22,30 +22,38 @@
 <body>
     <main class="main-wrapper">
         <header class="main-header">
-            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <div class="container-fluid">
-                    <a class="navbar-brand" href="#">CV</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                        <div class="navbar-nav">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
-                            <a class="nav-link" href="#">About</a>
-                            <a class="nav-link" href="#">Showcase</a>
-                            <i class="material-icons">add</i>
-                            <span class="material-icons text-light mt-2">
-                                shopping_cart
-                            </span>
+            <div class="overlay">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <div class="container-fluid">
+                        <a class="navbar-brand mt-2 mx-2" href="#">CV</a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                            <div class="navbar-nav">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                                <a class="nav-link" href="#">About</a>
+                                <a class="nav-link" href="#">Showcase</a>
+                                <a class="nav-link" href="#">Contact</a>
+                            </div>
                         </div>
                     </div>
+                </nav>
+                <video id="video-background" autoplay muted loop>
+                    <source src="./videos/real-estate-background.mp4" type="video/mp4">
+                </video>
+                <div class="showcase text-light">
+                    <div class="container d-flex flex-column align-items-center justify-content-center">
+                        <h4>Cynthia Velazquez</h4>
+                        <p class="lead">Real Estate Photographer</p>
+                    </div>
                 </div>
-            </nav>
+            </div>
         </header>
+        <section style="height: 1000px"></section>
     </main>
-
     <script src="./js/app.js"></script>
 </body>
 
