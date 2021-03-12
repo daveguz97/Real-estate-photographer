@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
@@ -17,11 +18,12 @@
     </script>
     <link rel="stylesheet" href="./css/main.css">
     <title>Cynthia Velazquez | Real Estate Photographer</title>
+    <link rel="shortcut icon" type="image/jpg" href="./images/favicon_io/favicon-16x16.png" />
 </head>
 
 <body>
     <main class="main-wrapper">
-        <header class="main-header">
+        <header class="main-header" id="#home">
             <div class="overlay">
                 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                     <div class="container-fluid">
@@ -33,10 +35,10 @@
                         </button>
                         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                             <div class="navbar-nav">
-                                <a class="nav-link active" aria-current="page" href="#">Home</a>
-                                <a class="nav-link" href="#">About</a>
-                                <a class="nav-link" href="#">Showcase</a>
-                                <a class="nav-link" href="#">Contact</a>
+                                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                                <a class="nav-link" href="#about">About</a>
+                                <a class="nav-link" href="#contact">Contact</a>
+                                <a class="nav-link" href="#contact">Hire Me</a>
                             </div>
                         </div>
                     </div>
@@ -44,16 +46,59 @@
                 <video id="video-background" autoplay muted loop>
                     <source src="./videos/real-estate-background.mp4" type="video/mp4">
                 </video>
-                <div class="showcase text-light">
+                <div class="text-light" id="showcase">
                     <div class="container d-flex flex-column align-items-center justify-content-center">
-                        <h4>Cynthia Velazquez</h4>
+                        <h1>Cynthia Velazquez</h1>
                         <p class="lead">Real Estate Photographer</p>
                     </div>
                 </div>
             </div>
         </header>
-        <section style="height: 1000px"></section>
+        <section id="about" class="my-4">
+            <div class="container d-flex flex-column align-items-center">
+                <h2 data-aos="zoom-in">About Me</h2>
+                <p class="text-center about-description my-4" data-aos="fade-right">
+                    Hi, my name is Cynthia Velazquez. I live in Harrisburg,
+                    North
+                    Carolina. I relocated 17 years ago from
+                    the city that never sleeps NYC. I'm a full-time Finance manager and have 5+ years Real Estate
+                    experience. I have a passion for real estate photography as I love to take pictures of almost about
+                    anything. I enjoy traveling, ocean views and making others happy. I love keeping things simple in
+                    life and on set as I find it always produces the best results. No matter the size of the project I
+                    always bring the same passion and dedication to each job and it's my priority to make sure everyone
+                    is happy! Let's connect and make awesome work together.</p>
+                <div class="card mb-3" data-aos="fade-right" style="max-width: 540px;">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="./images/real-estate-pic-1.jpg" alt="real estate pic 1">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body mx-4">
+                                <h5 class="card-title">High Quality Photos for your real estate</h5>
+                                <p class="card-text">I will help you market your real estate by providing you high
+                                    quality photos for your property.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card mb-3" data-aos="fade-left">
+                    <div class="row g-0">
+                        <div class="col-md-8">
+                            <div class="card-body mx-4">
+                                <h5 class="card-title">Affordable and Professional</h5>
+                                <p class="card-text">I will help you market your real estate by providing you high
+                                    quality photos for your property.</p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="./images/real-estate-pic-2.jpg" alt="real estate pic 2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./js/app.js"></script>
 </body>
 

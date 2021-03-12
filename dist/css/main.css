@@ -1,11 +1,15 @@
 @media (max-width: 768px) {
+  body {
+    overflow-x: hidden; }
   #video-background {
     display: none; }
   .main-header {
     background-image: url("https://images.pexels.com/photos/3214064/pexels-photo-3214064.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover; } }
+    background-size: cover; }
+  #about .card img {
+    max-width: 100%; } }
 
 * {
   margin: 0;
@@ -16,7 +20,11 @@ body {
   font-family: 'Lato', sans-serif; }
 
 :is(h1, h2, h3, h4, h5, h6) {
-  font-family: 'Merriweather', serif; }
+  font-family: 'Merriweather', serif;
+  text-transform: capitalize; }
+
+img {
+  max-width: 100%; }
 
 .main-header {
   height: 100vh;
@@ -50,5 +58,29 @@ body {
       position: absolute;
       right: 1.5rem;
       cursor: pointer; }
-  .main-header .showcase .container {
-    height: 80vh; }
+  .main-header #showcase {
+    letter-spacing: 3px; }
+    .main-header #showcase .container {
+      height: 80vh; }
+    .main-header #showcase h1 {
+      line-height: 1.6;
+      animation: textFadeIn 3s; }
+    .main-header #showcase .lead {
+      font-size: 1.4rem;
+      animation: textFadeIn 5s; }
+
+#about {
+  height: 100vh; }
+  #about .card {
+    max-width: 520px; }
+  #about .about-description {
+    width: 80%;
+    font-size: 1.2rem; }
+  #about img {
+    max-width: 200px; }
+
+@keyframes textFadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
