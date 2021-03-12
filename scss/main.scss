@@ -7,6 +7,7 @@
 
 body {
     font-family: 'Lato', sans-serif;
+    position: relative;
 }
 
 :is(h1, h2, h3, h4, h5, h6) {
@@ -81,7 +82,14 @@ img {
 }
 
 #about {
-    height: 100vh;
+    height: 100%;
+
+    .container {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
     
     .card {
         max-width: 520px;

@@ -1,5 +1,5 @@
 @media (max-width: 768px) {
-  html, body {
+  body {
     overflow-x: hidden; }
   #video-background {
     display: none; }
@@ -8,6 +8,8 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; }
+  #about .about-description {
+    font-size: 1rem; }
   #about .card img {
     max-width: 100%; } }
 
@@ -17,7 +19,8 @@
   box-sizing: border-box; }
 
 body {
-  font-family: 'Lato', sans-serif; }
+  font-family: 'Lato', sans-serif;
+  position: relative; }
 
 :is(h1, h2, h3, h4, h5, h6) {
   font-family: 'Merriweather', serif;
@@ -73,7 +76,12 @@ img {
       animation: textFadeIn 5s; }
 
 #about {
-  height: 100vh; }
+  height: 100%; }
+  #about .container {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-evenly; }
   #about .card {
     max-width: 520px; }
   #about .about-description {
