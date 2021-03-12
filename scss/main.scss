@@ -21,6 +21,10 @@ img {
 .main-header {
     height: 100vh;
     position: relative;
+    .navbar {
+        position: sticky;
+        top: 0;
+    }
     .overlay {
         top: 0;
         right: 0;
