@@ -1,19 +1,16 @@
-@media (max-width: 768px) {
-  body {
-    overflow-x: hidden; }
-  #video-background {
-    display: none; }
-  .main-header {
-    background-image: url("https://images.pexels.com/photos/3214064/pexels-photo-3214064.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; }
-  #about .about-description {
-    font-size: 1rem; }
-  #about .card {
-    width: 80%; }
-    #about .card img {
-      max-width: 100%; } }
+@keyframes textFadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes chevronBounceEffect {
+  0% {
+    transform: translateY(0); }
+  50% {
+    transform: translateY(-5px); }
+  100% {
+    transform: translateY(0); } }
 
 * {
   margin: 0;
@@ -28,15 +25,17 @@ body {
   font-family: 'Merriweather', serif;
   text-transform: capitalize; }
 
+a {
+  color: #f8f9fa; }
+  a:hover {
+    color: inherit; }
+
 img {
   max-width: 100%; }
 
 .main-header {
   height: 100vh;
   position: relative; }
-  .main-header .navbar {
-    position: sticky;
-    top: 0; }
   .main-header .overlay {
     top: 0;
     right: 0;
@@ -57,25 +56,42 @@ img {
     top: 0;
     left: 0;
     object-fit: cover; }
-  .main-header nav {
-    position: relative; }
-    .main-header nav .navbar-brand {
+  .main-header .navbar {
+    position: sticky;
+    top: 0; }
+    .main-header .navbar .navbar-brand {
       font-family: 'Crimson Text', serif;
       font-size: 2rem; }
-    .main-header nav #shopping-cart {
-      position: absolute;
-      right: 1.5rem;
-      cursor: pointer; }
   .main-header #showcase {
     letter-spacing: 3px; }
     .main-header #showcase .container {
       height: 80vh; }
     .main-header #showcase h1 {
+      opacity: 0;
       line-height: 1.6;
-      animation: textFadeIn 3s; }
+      animation: textFadeIn 3s;
+      animation-timing-function: ease;
+      animation-fill-mode: forwards; }
     .main-header #showcase .lead {
       font-size: 1.4rem;
-      animation: textFadeIn 5s; }
+      opacity: 0;
+      animation: textFadeIn 3s;
+      animation-delay: 0.5s;
+      animation-timing-function: ease;
+      animation-fill-mode: forwards; }
+    .main-header #showcase .learn-more-div {
+      position: absolute;
+      bottom: 1rem;
+      opacity: 0;
+      text-align: center;
+      animation: textFadeIn 3s;
+      animation-delay: 0.5s;
+      animation-timing-function: ease;
+      animation-fill-mode: forwards; }
+      .main-header #showcase .learn-more-div .expand-more {
+        animation: chevronBounceEffect 1.5s;
+        animation-fill-mode: both;
+        animation-iteration-count: infinite; }
 
 #about {
   height: 100%; }
@@ -92,8 +108,19 @@ img {
   #about img {
     max-width: 200px; }
 
-@keyframes textFadeIn {
-  from {
-    opacity: 0; }
-  to {
-    opacity: 1; } }
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden; }
+  #video-background {
+    display: none; }
+  .main-header {
+    background-image: url("https://images.pexels.com/photos/3214064/pexels-photo-3214064.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; }
+  #about .about-description {
+    font-size: 1rem; }
+  #about .card {
+    width: 80%; }
+    #about .card img {
+      max-width: 100%; } }

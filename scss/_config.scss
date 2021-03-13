@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    position: relative;
+}
+
+:is(h1, h2, h3, h4, h5, h6) {
+    font-family: 'Merriweather', serif;
+    text-transform: capitalize;
+}
+
+a {
+    color: #f8f9fa;
+
+    &:hover {
+        color: inherit;
+    }
+}
+
+img {
+    max-width: 100%;
+}

@@ -1,31 +1,9 @@
-@import './mobile';
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Lato', sans-serif;
-    position: relative;
-}
-
-:is(h1, h2, h3, h4, h5, h6) {
-    font-family: 'Merriweather', serif;
-    text-transform: capitalize;
-}
-
-img {
-    max-width: 100%;
-}
+@import './animations';
+@import './config';
 
 .main-header {
     height: 100vh;
     position: relative;
-    .navbar {
-        position: sticky;
-        top: 0;
-    }
     .overlay {
         top: 0;
         right: 0;
@@ -49,17 +27,13 @@ img {
         left: 0;
         object-fit: cover;
     }
-    nav {
-        position: relative;
+
+    .navbar {
+        position: sticky;
+        top: 0;
         .navbar-brand {
             font-family: 'Crimson Text', serif;
             font-size: 2rem;
-        }
-
-        #shopping-cart {
-            position: absolute;
-            right: 1.5rem;
-            cursor: pointer;
         }
     }
 
@@ -70,27 +44,49 @@ img {
         }
 
         h1 {
+            opacity: 0;
             line-height: 1.6;
             animation: textFadeIn 3s;
+            animation-timing-function: ease;
+            animation-fill-mode: forwards;
         }
 
         .lead {
             font-size: 1.4rem;
-            animation: textFadeIn 5s;
+            opacity: 0;
+            animation: textFadeIn 3s;
+            animation-delay: 0.5s;
+            animation-timing-function: ease;
+            animation-fill-mode: forwards;
+        }
+
+        .learn-more-div {
+            position: absolute;
+            bottom: 1rem;
+            opacity: 0;
+            text-align: center;
+            animation: textFadeIn 3s;
+            animation-delay: 0.5s;
+            animation-timing-function: ease;
+            animation-fill-mode: forwards;
+            .expand-more {
+                animation: chevronBounceEffect 1.5s;
+                animation-fill-mode: both;
+                animation-iteration-count: infinite;
+            }
         }
     }
 }
 
 #about {
     height: 100%;
-
     .container {
         display: flex;
         height: 100%;
         flex-direction: column;
         justify-content: space-evenly;
     }
-    
+
     .card {
         max-width: 520px;
     }
@@ -104,11 +100,4 @@ img {
     }
 }
 
-@keyframes textFadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
+@import './mobile';
