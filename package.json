@@ -15,5 +15,14 @@
   "license": "ISC",
   "dependencies": {
     "node-sass": "^5.0.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daveguz97/Real-estate-photographer.git"
+  },
+  "bugs": {
+    "url": "https://github.com/daveguz97/Real-estate-photographer/issues"
+  },
+  "homepage": "https://github.com/daveguz97/Real-estate-photographer#readme"
 }

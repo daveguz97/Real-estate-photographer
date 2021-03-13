@@ -56,12 +56,14 @@ img {
     top: 0;
     left: 0;
     object-fit: cover; }
-  .main-header .navbar {
-    position: sticky;
-    top: 0; }
-    .main-header .navbar .navbar-brand {
-      font-family: 'Crimson Text', serif;
-      font-size: 2rem; }
+  .main-header .navbar .navbar-brand {
+    font-family: 'Crimson Text', serif;
+    font-size: 2rem; }
+  .main-header fixed-nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 2; }
   .main-header #showcase {
     letter-spacing: 3px; }
     .main-header #showcase .container {
@@ -108,13 +110,27 @@ img {
   #about img {
     max-width: 200px; }
 
+#contact {
+  height: 100vh;
+  margin-top: 1rem;
+  color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../images/real-estate-background-contact.jpeg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+  #contact form {
+    min-height: 50vh; }
+
 @media (max-width: 768px) {
   body {
     overflow-x: hidden; }
   #video-background {
     display: none; }
   .main-header {
-    background-image: url("https://images.pexels.com/photos/3214064/pexels-photo-3214064.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-image: url("../images/real-estate-background-mobile.jpeg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover; }

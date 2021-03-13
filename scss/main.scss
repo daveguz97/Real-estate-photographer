@@ -29,12 +29,17 @@
     }
 
     .navbar {
-        position: sticky;
-        top: 0;
         .navbar-brand {
             font-family: 'Crimson Text', serif;
             font-size: 2rem;
         }
+    }
+
+    fixed-nav {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 2;
     }
 
     #showcase {
@@ -97,6 +102,24 @@
 
     img {
         max-width: 200px;
+    }
+}
+
+#contact {
+    height: 100vh;
+    margin-top: 1rem;
+    color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('../images/real-estate-background-contact.jpeg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    form {
+        min-height: 50vh;
     }
 }
 
