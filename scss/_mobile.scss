@@ -14,7 +14,7 @@
 // }
 
 @media (max-width: 768px) {
-    body{
+    body {
         overflow-x: hidden;
     }
     #video-background {
@@ -32,6 +32,7 @@
             font-size: 1rem;
         }
         .card {
+            width: 80%;
             img {
                 max-width: 100%;
             }

@@ -10,8 +10,10 @@
     background-size: cover; }
   #about .about-description {
     font-size: 1rem; }
-  #about .card img {
-    max-width: 100%; } }
+  #about .card {
+    width: 80%; }
+    #about .card img {
+      max-width: 100%; } }
 
 * {
   margin: 0;
